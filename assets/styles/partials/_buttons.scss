@@ -1,0 +1,37 @@
+.button{
+	font-family: $contentTypog;
+	text-transform: uppercase;
+	border: none;
+}
+
+.button--action{
+	background-color: $fontColorMain;
+	color: $fontColorTert;
+	font-size: 1.3rem;
+	letter-spacing: 2px;
+	padding: 15px 45px;
+	margin-right: 11px;
+}
+
+.button--accent{
+	background-color: $accentColorVibrant;
+	color: $fontColorMain;
+	font-size: 1.3rem;
+	letter-spacing: 2px;
+	padding: 15px 45px;
+}
+
+.button--item{
+	margin: 0 auto;
+	font-weight: bolder;
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	overflow: hidden;
+	outline:none;
+	color: $fontColorMain;
+	font-size: 1.4rem;
+	text-align: center;
+	width: 100%;
+	padding: 20px 0;
+}

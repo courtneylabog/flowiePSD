@@ -1,0 +1,418 @@
+@import "partials/normalize";
+@import "partials/variables";
+@import "partials/buttons";
+@import "partials/header";
+
+// @media (max-width: 940px) {
+// }
+
+// /* Landscape phone to portrait tablet */
+// @media (max-width: 768px) {
+// }
+
+// /* Landscape phones and down */
+// @media (max-width: 480px) {
+// }
+
+// @media (max-width: 320px) {
+// }
+
+
+html {
+	font-size: 10px;
+}
+
+h1{
+	visibility: hidden; 
+	position: absolute;
+	top: 9999999999;
+}
+
+h2{
+	margin: 0;
+	font-family: $contentTypog;
+	font-size: 3rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+h3{
+	font-family: $contentTypog;
+}
+
+section{
+	font-family: $contentTypog;
+	padding: 115px 0;
+}
+
+button{
+	font-family: $contentTypog;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.wrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.contentWrapper{
+	max-width: 1170px;
+	margin: 0 auto;
+	@media (max-width: 1240px) {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	@media (max-width: 1170px) {
+		max-width: 80%;
+		margin: 0 auto;
+	}
+}
+
+// ABOUT
+.about{
+	display: flex;
+	flex-direction: column;
+	h2{
+		font-weight: normal;
+		margin: auto;
+	}
+	p{
+		color: $fontColorSecondary;
+		font-size: 1.5rem;
+		text-align: center;
+		margin: 30px auto 88px auto;
+	}
+}
+
+.about--wrapper__text{
+	max-width: 1020px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.about__container{
+	display: flex;
+	justify-content: space-between;
+	div{
+		width: 31.8%;
+		img{
+			width: 100%;
+		}
+	}
+	p{
+		color: $fontColorMain;
+		letter-spacing: 1.5px;
+		margin: 20px auto 0px auto;
+		text-transform: uppercase;
+	}
+}
+
+.flex{
+	display: flex;
+	flex-direction: column;
+}
+
+.flexRow{
+	display: flex;
+}
+
+//FEATURED
+.featured{
+	background-color: $sectionColorSecondary;
+	overflow-x: hidden; 
+	h2{
+		margin: auto;
+	}
+	ul{
+		display: flex;
+		margin: auto;
+	}
+	li{
+		font-size: 1.6rem;
+		text-transform: uppercase;
+		color: $fontColorSecondary;
+		margin: 40px 23px 55px 23px;
+	}
+}
+
+.plantAbsolute{
+	position: absolute;
+	overflow: hidden;
+	bottom: 0%;
+	right: -70.5%;
+	@media (max-width: 1640px) {
+		right: -60%;
+	}
+	@media (max-width: 1440px) {
+		right: -45%;
+	}
+	@media (max-width: 1240px) {
+		display: none;
+	}
+}
+
+.featured__container{
+	width: 50%;
+	display: grid;
+	grid-template-rows: 50% 50%;
+	grid-template-columns: 50% 50%;
+	grid-column-gap: 30px;
+	grid-row-gap: 20px;
+	margin-right: 30px;
+	@media (max-width: 1240px) {
+		grid-column-gap: 18px;
+		grid-row-gap: 12px;
+	}
+}
+
+.item--feature{
+	div{
+		background-color: #FFF;
+		img{
+			width: 100%;
+		}
+		p{
+			font-size: 1.6rem;
+			text-align: center; 
+			margin: 0;
+			}
+		.price{
+			color: $fontColorSecondary;
+			text-align: center; 
+			padding: 15px 0 30px 0;
+		}
+	}
+}
+
+.feature__header{
+	font-size: 3.6rem;
+	text-transform: uppercase;
+	p{
+		margin: 0;
+	}
+	span{
+		color: $accentColor;
+		font-weight: bold;
+	}
+}
+
+.feature__content{
+	font-size: 1.5rem;
+	color: $fontColorSecondary;
+	overflow-x: hidden;
+	p{
+		margin: 50px auto 70px auto;
+	}
+	
+}
+
+.featured__feature{
+	margin-left: 30px;
+	padding: 98px 48px;
+	width: 48%;
+	position: relative;
+	@media (max-width: 1240px) {
+		border: 7px solid #FFF;
+	}
+}
+
+
+.banner__video{
+	background: url(../images/plants_wide.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	img{
+		padding: 35px 0px;
+		margin: 0 auto;
+	}
+}
+
+.clients{
+	background-color: $sectionColorSecondary;
+}
+
+.client__container{
+	display: flex; 
+	justify-content: space-between;
+	align-items: center;
+}
+
+//NEW ARRIVALS
+.newArrivals{
+	display: flex;
+	flex-direction: column;
+	h2{
+		margin: auto;
+	}
+	.toggleContainer{
+		display: flex;
+		justify-content: flex-end;
+		align-items: baseline;
+		color: $sectionColorSecondary;
+		i{
+			font-size: 3rem;
+			margin: 0 30px;
+		}
+		p{
+			font-size: 1.9rem;
+		}
+	}
+}
+
+.newArrivals__grid{
+	margin: 60px auto;
+	display: grid;
+	grid-template-columns: 23.35% 23.35% 23.35% 23.35%;
+	grid-column-gap: 30px;
+	grid-row-gap: 10px;
+	grid-template-rows: 50% 50%;
+	@media (max-width: 1240px) {
+		grid-column-gap: 18px;
+		grid-row-gap: 6px;
+		grid-template-rows: 50% 50%;
+	}
+	.grid--50{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		img {
+			width: 100%;
+			border: 5px solid $sectionColorSecondary;
+		}
+	}
+	div{
+		justify-self: center;
+		img{
+			width: 100%;
+		}
+	}
+}
+
+//BLOG
+.blog{
+	display: flex;
+	flex-direction: column;
+	h2{
+		margin: 0px auto 65px auto;
+	}
+}
+
+.blog__content{
+	display: flex;
+	justify-content: space-between;
+}
+
+.blog__card{
+	width: 48.8%;
+	img {
+		width: 100%;
+	}
+}
+
+.blog__text{
+	display: flex;
+	.blog__post{
+		width: 70%;
+		span{
+			color: $accentColor;
+		}
+		p{
+			font-size: 1.4rem;
+			color: $fontColorSecondary;
+		}
+		.blog__title{
+			font-size: 2rem;
+			font-weight: bold;
+			color: $fontColorMain;
+		}
+	}
+
+	.blog__date{
+		width: 30%;
+		margin-right: 10px;
+		position: relative;
+		p:first-child { 
+			margin: 0;
+			font-weight: bold;
+			font-size: 15rem;
+			color: $sectionColorSecondary;
+		}
+		p:nth-child(2) {
+			margin: 0;
+			font-size: 2rem;
+			color: $accentColor;
+			position: absolute;
+			top: 40%;
+			left: 30%;
+		}
+	}
+}
+
+
+// FOOTER
+// IMPROVE COLUMN SPACING PLEASE
+footer{
+	padding: 105px 0px 95px 0px;
+	font-family: $contentTypog;
+	background: url(../images/footer_bg.jpg);
+	background-size: cover;
+	background-position: bottom right; 
+	background-repeat: no-repeat;
+	h5{
+		font-size: 1.8rem;
+		margin: 0;
+		margin-bottom: 70px;
+		text-transform: uppercase;
+		color: $fontColorTert;
+		text-align: center;
+	}
+	i{
+		color: $fontColorSecondary;
+	}
+	p{
+		font-size: 1.5rem;
+		color: $fontColorSecondary;
+	}
+}
+
+.footer__social{
+	i{
+		font-size: 2rem;
+		margin: 58px 10px;
+	}
+}
+
+.footer__column{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 33%;
+	margin: 0 auto;
+	p{
+		text-align: center;
+		margin: 8px auto;
+	}
+}
+
+form{
+	width: 100%;
+	input{
+		margin-top: 25px;
+		font-size: 1.4rem;
+		width: 100%;
+		display: block;
+		padding: 16px 0;
+		text-align: center;
+	}
+	.button.button--accent{
+		padding: 15px 0;
+		width: 135px;
+		margin: 10px auto;
+	}
+}

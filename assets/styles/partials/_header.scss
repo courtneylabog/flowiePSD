@@ -1,0 +1,88 @@
+// HEADER
+
+header{
+	font-family: $contentTypog;
+}
+
+.header__topBar{
+	background-color: $navBarColorTert;
+}
+
+.header__topBar--nav{
+	color: $fontColorSecondary;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-between;
+	.nav--left{
+		display: flex;
+		li{
+			padding: 25px 0; 
+		}
+		li:nth-child(2) {
+		    padding: 25px 36px;
+		}
+	}
+	.nav--right{
+		display: flex;
+		li{
+			padding: 25px 0; 
+		}
+		li:nth-child(2) {
+		    padding: 25px 36px;
+		}
+	}
+}
+
+.header__logo{
+	display: flex;
+	img{
+		margin: 35px auto 35px auto;
+	}
+}
+
+.nav__main{
+	font-size: 1.4rem;
+	display: flex;
+	ul{
+		display: flex;
+		margin: auto;
+	}
+	li{
+		padding: 30px 40px;
+		@media (max-width: 1240px) {
+			padding: 18px 24px;
+		}
+	}
+	a{
+		text-transform: uppercase;
+		color: $fontColorMain;
+		text-decoration: none;
+	}
+}
+
+.header__hero{
+	background: url(../images/plant_hero.jpeg);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	img{
+		margin: auto;
+		padding: 125px 200px 0px 200px;
+	}
+	h3{
+		font-weight: lighter;
+		font-size: 2.2rem;
+		letter-spacing: 3px;
+		color: $fontColorTert;
+		text-transform: uppercase;
+		margin: 0 auto 40px auto;
+	}
+	.buttonContainer{
+		display: flex;
+		margin: 0px auto 170px auto;
+		button{
+			
+		}
+	}
+}
