@@ -43,6 +43,9 @@ h3{
 section{
 	font-family: $contentTypog;
 	padding: 115px 0;
+	@media (max-width: 940px) {
+		padding: 100px 0;
+	}
 }
 
 button{
@@ -111,6 +114,16 @@ ul{
 		margin: 20px auto 0px auto;
 		text-transform: uppercase;
 	}
+	@media (max-width: 768px) {
+		flex-direction: column;
+		div{
+			width: 80%;
+			margin: auto;
+		}
+		p{
+			margin: 10px auto 30px auto;
+		}
+	}
 }
 
 .flex{
@@ -118,8 +131,11 @@ ul{
 	flex-direction: column;
 }
 
-.flexRow{
+.feature--flexRow{
 	display: flex;
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
 }
 
 //FEATURED
@@ -168,6 +184,14 @@ ul{
 	@media (max-width: 1240px) {
 		grid-column-gap: 18px;
 		grid-row-gap: 12px;
+	}
+	@media (max-width: 940px) {
+		width: 55%;
+		
+	}
+	@media (max-width:768px) {
+		width: 100%;
+		margin-right: 0px;
 	}
 }
 
@@ -220,6 +244,15 @@ ul{
 	@media (max-width: 1240px) {
 		border: 7px solid #FFF;
 	}
+	@media (max-width: 940px) {
+		width: 45%;
+		padding: 78px 28px;
+		margin-left: 10px;
+	}
+	@media (max-width: 768px) {
+		width: 100%;
+		display: block;
+	}
 }
 
 
@@ -228,9 +261,17 @@ ul{
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
-	img{
+	div{
 		padding: 35px 0px;
 		margin: 0 auto;
+		@media (max-width: 940px) {
+			width: 90%;
+			padding: 20px 0px;
+		}
+	}
+	img{
+		width: 100%;
+		
 	}
 }
 
@@ -242,6 +283,12 @@ ul{
 	display: flex; 
 	justify-content: space-between;
 	align-items: center;
+	div{
+		width: 15%;
+		img{
+			width: 100%;
+		}
+	}
 }
 
 //NEW ARRIVALS
@@ -256,6 +303,10 @@ ul{
 		justify-content: flex-end;
 		align-items: baseline;
 		color: $sectionColorSecondary;
+		@media (max-width: 768px) {
+			margin-top: 30px;
+			justify-content: center;
+		}
 		i{
 			font-size: 3rem;
 			margin: 0 30px;
@@ -276,7 +327,10 @@ ul{
 	@media (max-width: 1240px) {
 		grid-column-gap: 18px;
 		grid-row-gap: 6px;
-		grid-template-rows: 50% 50%;
+		justify-items: center;
+	}
+	@media (max-width: 768px) {
+		margin: 30px auto;
 	}
 	.grid--50{
 		grid-column-start: 1;
@@ -285,9 +339,16 @@ ul{
 			width: 100%;
 			border: 5px solid $sectionColorSecondary;
 		}
+		@media (max-width: 768px) {
+			grid-column-start: 1;
+			grid-column-end: 5;
+		}
 	}
 	div{
 		justify-self: center;
+		@media (max-width: 768px) {
+			grid-column-start: span 2;
+		}
 		img{
 			width: 100%;
 		}
@@ -306,10 +367,16 @@ ul{
 .blog__content{
 	display: flex;
 	justify-content: space-between;
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
 }
 
 .blog__card{
 	width: 48.8%;
+	@media (max-width: 768px) {
+		width: 100%;
+	}
 	img {
 		width: 100%;
 	}
@@ -317,6 +384,9 @@ ul{
 
 .blog__text{
 	display: flex;
+	@media (max-width: 768px) {
+		margin-bottom: 30px;
+	}
 	.blog__post{
 		width: 70%;
 		span{
@@ -330,6 +400,9 @@ ul{
 			font-size: 2rem;
 			font-weight: bold;
 			color: $fontColorMain;
+			@media (max-width: 768px) {
+				margin-top: 10px;
+			}
 		}
 	}
 
@@ -356,7 +429,6 @@ ul{
 
 
 // FOOTER
-// IMPROVE COLUMN SPACING PLEASE
 footer{
 	padding: 105px 0px 95px 0px;
 	font-family: $contentTypog;
@@ -371,6 +443,9 @@ footer{
 		text-transform: uppercase;
 		color: $fontColorTert;
 		text-align: center;
+		@media (max-width: 940px) {
+			margin-bottom: 50px;
+		}
 	}
 	i{
 		color: $fontColorSecondary;
@@ -379,6 +454,14 @@ footer{
 		font-size: 1.5rem;
 		color: $fontColorSecondary;
 	}
+}
+
+.footer--flexRow{
+	display: flex;
+	@media (max-width: 940px) {
+		flex-wrap: wrap;
+	}
+	
 }
 
 .footer__social{
@@ -394,9 +477,19 @@ footer{
 	align-items: center;
 	width: 33%;
 	margin: 0 auto;
+	@media (max-width: 940px) {
+		width: 50%;
+	}
 	p{
 		text-align: center;
 		margin: 8px auto;
+	}
+}
+
+@media (max-width: 940px) {
+	.footer__column.footer__form{
+		width: 100%;
+		margin-top: 50px;
 	}
 }
 
