@@ -4,6 +4,43 @@ header{
 	font-family: $contentTypog;
 }
 
+.header__topBar--mobile{
+	display: none;
+	background-color: $navBarColorTert;
+	color: $fontColorSecondary;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	.fa-bars{
+		font-size: 2rem;
+		padding: 10px 0px 10px 30px;
+	}
+	ul{
+		display: none;
+	}
+	li{
+		padding: 10px 20px;
+		text-align: center;
+		a{
+			color: $fontColorSecondary;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+	}
+	@media (max-width: 480px) {
+		display: block;
+	}
+}
+
+.navBreak{
+	div:after {
+	   content:"";
+	   border-top: 2px solid $fontColorSecondary;
+	   display: block;
+	   width: 60%;
+	   margin: 0 auto;
+	 }
+}
+
 .header__topBar{
 	background-color: $navBarColorTert;
 }
@@ -21,6 +58,15 @@ header{
 		}
 		li:nth-child(2) {
 		    padding: 25px 36px;
+		    @media (max-width: 630px) {
+		    	padding: 25px 18px;
+		    }
+		    @media (max-width: 630px) {
+		    	padding: 25px 9px;
+		    }
+		}
+		@media (max-width: 480px) {
+			display: none;
 		}
 	}
 	.nav--right{
@@ -30,7 +76,16 @@ header{
 		}
 		li:nth-child(2) {
 		    padding: 25px 36px;
+		    @media (max-width: 630px) {
+		    	padding: 25px 18px;
+		    }
+		    @media (max-width: 4800px) {
+		    	padding: 25px 9px;
+		    }
 		}
+	}
+	@media (max-width: 480px) {
+		display: none;
 	}
 }
 
@@ -61,14 +116,14 @@ header{
 		@media (max-width: 1240px) {
 			padding: 18px 24px;
 		}
-		// @media (max-width: 1170px) {
-		// 	padding: 15px 20px;
-		// }
 	}
 	a{
 		text-transform: uppercase;
 		color: $fontColorMain;
 		text-decoration: none;
+	}
+	@media (max-width: 480px) {
+		display: none;
 	}
 }
 
@@ -88,6 +143,10 @@ header{
 		 padding: 40px 70px 0px 70px;
 		 width: 80%;
 		}
+		@media (max-width: 480px) {
+		 padding: 40px 20px 0px 20px;
+		 width: 80%;
+		}
 		img{
 			width: 100%;
 		}
@@ -101,6 +160,16 @@ header{
 		margin: 0 auto 40px auto;
 		@media (max-width: 940px) {
 			font-size: 2rem;
+		}
+		@media (max-width: 768px) {
+			padding: 0 50px;
+			text-align: center;
+		}
+		@media (max-width: 480px) {
+			font-size: 1.8rem;
+		}
+		@media (max-width: 320px) {
+			font-size: 1.6rem;
 		}
 	}
 	.buttonContainer{

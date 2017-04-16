@@ -11,8 +11,8 @@ import 'styles/index.scss';
 
 console.log('hello');
 
-$('section').on('click', function(){
-	console.log('hi');
+$('#mobileMenu').on('click', function(){
+	$('.header__topBar--mobile ul').toggle();
 });
 
 
