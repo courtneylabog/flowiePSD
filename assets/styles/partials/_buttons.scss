@@ -11,10 +11,15 @@
 	letter-spacing: 2px;
 	padding: 15px 45px;
 	margin-right: 11px;
+	transition:all 0.5s;
 	@media (max-width: 768px) {
 		margin-right: 0px;
 		margin-bottom: 20px;
 	}
+}
+
+.button--action:hover{
+	transform: scale(1.05);
 }
 
 .button--accent{
@@ -23,10 +28,37 @@
 	font-size: 1.3rem;
 	letter-spacing: 2px;
 	padding: 15px 45px;
+	transition:all 0.5s;
+}
+
+.button--accent:hover{
+	transform: scale(1.05);
 }
 
 .button--item{
 	margin: 0 auto;
+	font-weight: bolder;
+	background-color: transparent;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	overflow: hidden;
+	outline:none;
+	color: $fontColorMain;
+	font-size: 1.4rem;
+	text-align: center;
+	width: 100%;
+	padding: 20px 0;
+	transition: all 0.3s;
+}
+
+.button--item:hover{
+	background-color: $accentColor;
+	color: $fontColorTert;
+}
+
+.button--keyline{
+	display: flex;
+	align-content: flex-start;
 	font-weight: bolder;
 	background-color: Transparent;
 	background-repeat:no-repeat;
@@ -38,4 +70,13 @@
 	text-align: center;
 	width: 100%;
 	padding: 20px 0;
+}
+
+.button--keyline::before{
+	content:"";
+	border-top: 1.5px solid $accentColor;
+	display: inline-block;
+	width: 50px;
+	padding: 5px;
+	margin: 10px 10px;
 }

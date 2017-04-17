@@ -1,4 +1,3 @@
-// FOOTER
 footer{
 	padding: 105px 0px 95px 0px;
 	font-family: $contentTypog;
@@ -23,9 +22,17 @@ footer{
 	i{
 		color: $fontColorSecondary;
 	}
+	i:hover{
+		color: $fontColorTert;
+		transition: all 0.3s;
+	}
 	p{
 		font-size: 1.5rem;
 		color: $fontColorSecondary;
+		transition: all 0.3s;
+	}
+	p:hover{
+		color: $fontColorTert;
 	}
 }
 

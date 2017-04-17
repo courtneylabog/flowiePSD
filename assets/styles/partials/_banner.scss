@@ -1,0 +1,18 @@
+.banner__video{
+	background: url(../images/plants_wide.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	div{
+		padding: 35px 0px;
+		margin: 0 auto;
+		@media (max-width: 940px) {
+			width: 90%;
+			padding: 20px 0px;
+		}
+	}
+	img{
+		width: 100%;
+		
+	}
+}
