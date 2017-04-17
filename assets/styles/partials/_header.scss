@@ -176,6 +176,7 @@ header{
 		}
 	}
 	h3{
+		text-align: center;
 		font-weight: lighter;
 		font-size: 2.2rem;
 		letter-spacing: 3px;
@@ -198,12 +199,16 @@ header{
 	}
 	.buttonContainer{
 		display: flex;
+		justify-content: center;
 		margin: 0px auto 170px auto;
 		@media (max-width: 940px) {
 			margin: 0px auto 100px auto;
 		}
 		@media (max-width: 768px) {
+			width: 40%;
 			flex-direction: column;
+			justify-content: center;
+			align-content: center;
 			margin: 0px auto 40px auto;
 		}
 	}
